@@ -134,7 +134,7 @@ function printResultofClicksandViews () {
     var ulE1 = document.getElementById('finalResult');
     for( var i =0; i<Items.all.length; i++) {
       var li = document.createElement('li');
-      li.textContent = `${Items.all[i].itemName} has ${Items.all[i].clickNumber} clicks ${Items.all[i].views} views`;
+      li.textContent = `${Items.all[i].itemName.split(".",1)} has ${Items.all[i].clickNumber} clicks and ${Items.all[i].views} views`;
       ulE1.append(li);
     }
   }
@@ -148,3 +148,7 @@ function printResultofClicksandViews () {
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+var arrnam="google.com";
+
+console.log(arrnam.split(".",1));
