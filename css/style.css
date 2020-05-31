@@ -1,0 +1,23 @@
+body{
+    background-color: darkgray;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+
+}
+#imagesSection img{
+    margin: 10px;
+    width: 30%;
+    height: 300px;
+}
+#imagesSection{
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 1);
+    background: linear-gradient(to left, #9CCDED , brown );
+    margin: auto;
+}
+header{
+    text-align: center;
+}
