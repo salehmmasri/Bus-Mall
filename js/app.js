@@ -25,6 +25,7 @@ var prodact = [
 
 ];
 
+
 var leftItem, centerItem, rightItem;
 // function SaveTheData() {
 //   var prodactArray = JSON.stringify(itemArr);
@@ -35,12 +36,9 @@ var leftItem, centerItem, rightItem;
 //   if (getProdactArray) {
 //     itemArr = JSON.parse(getProdactArray);
     // renderImages();
-    //console.log(itemArr.views);
+    //console.log(itemArr.views); // }
 
-
-  }
-
-}
+// }
 var leftImg = document.getElementById('leftImage');
 var centerImg = document.getElementById('centerImage');
 var rightImg = document.getElementById('rightImage');
