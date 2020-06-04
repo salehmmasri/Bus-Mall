@@ -11,34 +11,33 @@ var prodact = [
   'chair.jpg',
   'cthulhu.jpg',
   'scissors.jpg',
-  // "wine-glass.jpg",
-  // "usb.gif",
-  // "shark.jpg",
-  // "dragon.jpg",
-  // "sweep.png",
-  // "tauntaun.jpg",
-  // "unicorn.jpg",
-  // "water-can.jpg",
-  // "pen.jpg",
-  // "dog-duck.jpg",
+  "wine-glass.jpg",
+  "usb.gif",
+  "shark.jpg",
+  "dragon.jpg",
+  "sweep.png",
+  "tauntaun.jpg",
+  "unicorn.jpg",
+  "water-can.jpg",
+  "pen.jpg",
+  "dog-duck.jpg",
   'pet-sweep.jpg'
 
 ];
 
 
 var leftItem, centerItem, rightItem;
-// function SaveTheData() {
-//   var prodactArray = JSON.stringify(itemArr);
-//   localStorage.setItem('prodactInLocal', prodactArray);
-// }
-// function getSavedData() {
-//   var getProdactArray = localStorage.getItem('prodactInLocal');
-//   if (getProdactArray) {
-//     itemArr = JSON.parse(getProdactArray);
-    // renderImages();
-    //console.log(itemArr.views); // }
-
-// }
+function SaveTheData() {
+  var prodactArray = JSON.stringify(itemArr);
+//  localStorage.setItem('prodactInLocal', prodactArray);
+}
+function getSavedData() {
+  var getProdactArray = localStorage.getItem('prodactInLocal');
+  if (getProdactArray) {
+    itemArr = JSON.parse(getProdactArray);
+//renderImages();
+//console.log(itemArr.views); // }
+}}
 var leftImg = document.getElementById('leftImage');
 var centerImg = document.getElementById('centerImage');
 var rightImg = document.getElementById('rightImage');
@@ -51,10 +50,8 @@ function Items(name) {
   this.imagePath = `assets/${name}`;
   this.clickNumber = 0;
   this.views = 0;
-  itemArr.push(this);
+  itemArr.push(this);}
 
-  // eslint-disable-next-line new-cap
-}
 // create objects based on the array
 for (var i = 0; i < prodact.length; i++) {
   new Items(prodact[i]);
@@ -214,21 +211,10 @@ function printResultofClicksandViews() {
 }
 
 
-
-
-
-
 // generate random #
 function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
-
-
-
-
-
-
 
 
 
